@@ -2,4 +2,4 @@
 rm -fr .config
 mkdir -p .config
 
-cp -r ~/.config/fish .config/fish
+cp -r ~/.config/ .config/
