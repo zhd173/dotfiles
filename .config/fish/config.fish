@@ -24,12 +24,14 @@ set -g default_user your_normal_user
 set -g theme_color_scheme dark
 set -g fish_prompt_pwd_dir_length 1
 set -g theme_project_dir_length 1
+
 if status --is-login
 
     # better ls colors
     set -gx LSCOLORS gxfxcxdxbxegedabagacad
 
     set -gx PATH /usr/local/bin $PATH
+    set -gx PATH /usr/local/opt/curl/bin $PATH
 
     # Autojump support
     [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
@@ -39,6 +41,8 @@ if status --is-login
     export PIPENV_DEFAULT_PYTHON_VERSION=3.6
     export PIPENV_SHELL_FANCY=1
     export PIPENV_MAX_SUBPROCESS=32
+    export LDFLAGS=-L/usr/local/opt/openssl/lib
+    export CPPFLAGS=-I/usr/local/opt/openssl/include
     set SHELL /usr/local/bin/fish
 
     set -gx PATH /usr/local/opt/python@2/bin $PATH
