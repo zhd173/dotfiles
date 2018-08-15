@@ -22,10 +22,6 @@ brew install ipython
 
 # 安装 Python 依赖
 pip3 install legit
-pip3 install flake8
-pip3 install jedi
-pip3 install pylint
-pip3 install tox
 
 # 安装 Pipenv
 brew install pipenv

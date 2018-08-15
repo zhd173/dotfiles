@@ -1,52 +1,57 @@
-# My Dotfiles
+# 配置文件备份
 
-### Fish Shell
+主要用于换机或重装系统后快速恢复工作环境。主要备份的文件如下:
 
-    $ fisher ls
-    bobthefish		  extract		  pipenv
-    bass			  getopts		  pisces
-    brew			  git-flow		  pyenv
-    brew-completions	  gitignore		  python
-    bundler		  grc			  spin
-    django		  homebrew-tap		  ssh
-    docker-completion	  humanize_duration	  sublime
-    done			  osx			  z
-### Homebrew Packages
-    
-    $ brew list
-    ack			httpie			node
-    adns			icu4c			npth
-    autoconf		imagemagick		openssl
-    autojump		imagemagick@6		p11-kit
-    bats			ipython			pandoc
-    cairo			jemalloc		pango
-    coreutils		jpeg			pcre
-    cowsay			kubernetes-cli		pcre2
-    curl			libassuan		pinentry
-    direnv			libcroco		pipenv
-    emacs-plus		libffi			pixman
-    fish			libgcrypt		pkg-config
-    fontconfig		libgpg-error		protobuf
-    fortune			libidn2			pyenv
-    freetype		libksba			pypy
-    fribidi			libpng			pypy3
-    gdbm			librsvg			python
-    gdk-pixbuf		libtasn1		python@2
-    gettext			libtermkey		readline
-    gist			libtiff			screenresolution
-    git			libtool			shellcheck
-    git-open		libunistring		sl
-    glib			libusb			sqlite
-    gmp			libuv			sshuttle
-    gnu-sed			libvterm		terminal-notifier
-    gnupg			libyaml			texinfo
-    gnutls			little-cms2		the_silver_searcher
-    gobject-introspection	luajit			thefuck
-    googler			mas			tree
-    graphite2		mosh			unibilium
-    grc			msgpack			webp
-    grep			mycli			wget
-    harfbuzz		mysql			xz
-    heroku			neofetch		zeromq
-    heroku-node		nettle
-    htop			nnn
+> * .gitconfig
+> * .gitmessage.txt
+> * .config/
+
+其中 `.config` 文件夹中主要是关于 `fish shell` 的配置。
+
+# 主要脚本说明
+
+## install.sh
+
+用来安装 `Homebrew` 及相关常用包、`Python` 环境、数据库环境、字体、编辑器配置等。
+
+## bootstrap-fish.fish
+
+配置 `fish shell` 的引导脚本。主要通过 `fisher` 来安装一些 `shell` 环境的辅助工具、主题等。详情参见:
+
+> 1. [fish shell](https://fishshell.com/)
+> 2. [fisher](https://github.com/fisherman/fisherman)
+> 3. [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+
+## backup.fish
+
+备份配置文件。
+
+## recover.fish
+
+回复配置文件。
+
+# 安装的包和依赖清单
+
+## Homebrew
+
+> * git
+> * fish
+> * grc
+> * autojump
+> * htop
+> * python
+> * python@2
+> * pypy
+> * pypy3
+> * ipython
+> * pipenv
+> * node
+> * mysql
+> * redis
+> * ag
+> * font-source-code-pro
+> * emacs
+
+## Python
+
+> * legit
