@@ -1,90 +1,55 @@
 #!/usr/bin/env bash
 
-# Install Xcode Command Line Tools.
+# 安装 Xcode Command Line Tools.
 xcode-select --install
 
-# Install Homebrew.
+# 安装 Homebrew.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install brew basics (auto-updating).
-brew install terminal-notifier
-brew tap domt4/autoupdate
-brew autoupdate --start --upgrade --cleanup --enable-notifications
-
-# Install brew essentials.
-brew install heroku
+# 安装基础工具
 brew install git
-brew install ack
-
-# Install Heroku plugins.
-heroku plugins:install heroku-repo
-
-# Install orchestration tools.
-# brew install terraform
-# brew install caskroom/cask/virtualbox
-# brew install caskroom/cask/minikube
-
-# Install download utilities.
-# brew install youtube-dl
-brew install wget
-brew install httpie
-
-# Install fancy shell stuff.
 brew install fish
 brew install grc
-brew install direnv
-brew install nnn
-brew install thefuck
 brew install autojump
-brew install googler
-brew install mas
 brew install htop
-brew install neofetch
-brew install mosh
 
-# Install bash utilities.
-brew install bats
-brew install shellcheck
-
-# Install Python utlitlies.
+# 安装 Python 相关
 brew install python
 brew install python@2
 brew install pypy
 brew install pypy3
 brew install ipython
 
-# Python utilities.
+# 安装 Python 依赖
 pip3 install legit
-pip2 install em-keyboard
+pip3 install flake8
+pip3 install jedi
+pip3 install pylint
+pip3 install tox
 
-# Pipenv!
+# 安装 Pipenv
 brew install pipenv
 
-# Install git utilities.
-brew install git-open
-brew install gist
-
-# Install other languages.
-# brew install lua
+# 安装其他语言
 brew install node
-# brew install ruby
 
-# Install fun stuff.
-brew install fortune
-brew install cowsay
-brew install sl
-gem install lolcat
+# 安装数据库
+brew install mysql
+brew install redis
 
-# Install network utilities
-brew install sshuttle
-npm install --global speed-test
+# 安装搜索工具
+brew install ag
 
-# Go stuff.
-# brew install go
-# brew install dep
+# 安装 Source Code Pro 字体
+brew tap caskroom/fonts
+brew cask install font-source-code-pro
 
-# GPG stuff.
-brew install gpg
+# 安装 Spacemacs
+brew cask install emacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git clone https://github.com/zhd173/.spacemacs.d.git
 
-# Pandoc
-brew install pandoc
+# 配置 Vim
+
+
+

@@ -2,7 +2,6 @@
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 fisher pipenv
-fisher laughedelic/pisces
 fisher laughedelic/brew-completions
 fisher pyenv
 fisher tab
