@@ -2,9 +2,9 @@
 
 主要用于换机或重装系统后快速恢复工作环境。主要备份的文件如下:
 
-> * .gitconfig
-> * .gitmessage.txt
-> * .config/
+    * .gitconfig
+    * .gitmessage.txt
+    * .config/
 
 其中 `.config` 文件夹中主要是关于 `fish shell` 的配置。
 
@@ -18,9 +18,9 @@
 
 配置 `fish shell` 的引导脚本。主要通过 `fisher` 来安装一些 `shell` 环境的辅助工具、主题等。详情参见:
 
-> 1. [fish shell](https://fishshell.com/)
-> 2. [fisher](https://github.com/fisherman/fisherman)
-> 3. [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+1. [fish shell](https://fishshell.com/)
+2. [fisher](https://github.com/fisherman/fisherman)
+3. [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 
 ## backup.fish
 
@@ -28,30 +28,30 @@
 
 ## recover.fish
 
-回复配置文件。
+恢复配置文件。
 
 # 安装的包和依赖清单
 
 ## Homebrew
 
-> * git
-> * fish
-> * grc
-> * autojump
-> * htop
-> * python
-> * python@2
-> * pypy
-> * pypy3
-> * ipython
-> * pipenv
-> * node
-> * mysql
-> * redis
-> * ag
-> * font-source-code-pro
-> * emacs
+* git
+* fish
+* grc
+* autojump
+* htop
+* python
+* python@2
+* pypy
+* pypy3
+* ipython
+* pipenv
+* node
+* mysql
+* redis
+* ag
+* font-source-code-pro
+* emacs
 
 ## Python
 
-> * legit
+* legit
