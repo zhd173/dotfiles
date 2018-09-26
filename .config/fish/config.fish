@@ -27,3 +27,5 @@ set -g theme_show_exit_status yes
 set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
 set -g LDFLAGS "-L/usr/local/opt/openssl/lib"
 set -g CPPFLAGS "-I/usr/local/opt/openssl/include"
+set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths

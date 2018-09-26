@@ -1,6 +1,8 @@
 # Folder view configuration files
 .DS_Store
 Desktop.ini
+.config/StardewValley
+.config/htop
 
 # Thumbnail cache files
 ._*
