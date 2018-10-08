@@ -29,3 +29,5 @@ set -g LDFLAGS "-L/usr/local/opt/openssl/lib"
 set -g CPPFLAGS "-I/usr/local/opt/openssl/include"
 set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -g fish_user_paths "/Users/zhd/go/bin" $fish_user_paths
+set -g GOPATH "/Users/zhd/go"
