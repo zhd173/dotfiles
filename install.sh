@@ -26,12 +26,22 @@ pip3 install legit
 # 安装 Pipenv
 brew install pipenv
 
-# 安装其他语言
+# 安装 Node
 brew install node
+
+# 安装 Go
+brew install go
+brew isntall dep
+brew upgrade dep
+
 
 # 安装数据库
 brew install mysql
 brew install redis
+brew install mycli
+
+# 安装MQ
+brew install rabbitmq
 
 # 安装搜索工具
 brew install ag
