@@ -33,6 +33,7 @@
 # 其他配置文件恢复方法
 
 1. iTerm 配置文件恢复
+
     将`itermconfig`文件复制到如下目录：
     ``` cmd
     ~/Library/Application Support/iTerm2/DynamicProfiles/
