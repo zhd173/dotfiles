@@ -56,11 +56,13 @@
 * pipenv
 * node
 * mysql
+* mycli
 * redis
+* rabbitmq
+* mongdb
 * ag
 * font-source-code-pro
 * emacs
-
-## Python
-
 * legit
+* go
+* dep
