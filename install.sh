@@ -39,6 +39,7 @@ brew upgrade dep
 brew install mysql
 brew install redis
 brew install mycli
+brew isntall mongdb
 
 # 安装MQ
 brew install rabbitmq
@@ -55,7 +56,8 @@ brew cask install emacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://github.com/zhd173/.spacemacs.d.git
 
-# 配置 Vim
-
+# Vim 基本配置
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
