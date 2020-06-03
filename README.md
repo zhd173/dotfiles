@@ -1,12 +1,21 @@
 # 配置文件备份
 
-主要用于换机或重装系统后快速恢复工作环境。主要备份的文件如下:
+脚本主要用于换机或重装系统后快速恢复工作环境。主要备份的文件如下:
 
     * .gitconfig
     * .gitmessage.txt
     * .config/
-
-其中 `.config` 文件夹中主要是关于 `fish shell` 的配置。
+    * .tmux
+    * .ipython
+    * .k9s
+    * .kube
+    * .oh-my-zsh
+    * .pip
+    * .ssh
+    * .tmux
+    * .tmux.conf
+    * .vimrc
+    * .zshrc
 
 # 主要脚本说明
 
@@ -14,55 +23,44 @@
 
 用来安装 `Homebrew` 及相关常用包、`Python` 环境、数据库环境、字体、编辑器配置等。
 
-## bootstrap-fish.fish
+## backup.sh
 
-配置 `fish shell` 的引导脚本。主要通过 `fisher` 来安装一些 `shell` 环境的辅助工具、主题等。详情参见:
+备份文件至 `~/Dropbox`
 
-1. [fish shell](https://fishshell.com/)
-2. [fisher](https://github.com/fisherman/fisherman)
-3. [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+## link.sh
 
-## backup.fish
-
-备份配置文件。
-
-## recover.fish
-
-恢复配置文件。
-
-# 其他配置文件恢复方法
-
-1. iTerm 配置文件恢复
-
-    将`itermconfig`文件复制到如下目录：
-    ``` cmd
-    ~/Library/Application Support/iTerm2/DynamicProfiles/
-    ```
+创建相关配置软连接
 
 # 安装的包和依赖清单
 
 ## Homebrew
 
-* git
-* fish
-* grc
-* autojump
-* htop
-* python
-* python@2
-* pypy
-* pypy3
-* ipython
-* pipenv
-* node
-* mysql
-* mycli
-* redis
-* rabbitmq
-* mongdb
-* ag
-* font-source-code-pro
-* emacs
-* legit
-* go
-* dep
+```shell
+➜ brew list
+ipython autojump istioctl operator-sdk bumpversion jq cloc k9s				
+kubebuilder kubectx curl percona-toolkit kustomize pgcli legit	
+emacs-plus envoy etcd popeye postgresql pre-commit prometheus
+protobuf gdb python redis git telnet the_silver_searcher go				
+mvnvm tmux golangci-lint mycli tox mysql tree grafana graphviz			
+wget hey nginx htop node zsh zsh-completions
+```
+
+## Go
+
+```shell
+GO111MODULE=on go get -v golang.org/x/tools/gopls@latest
+GO111MODULE=on CGO_ENABLED=0 go get -v -trimpath -ldflags '-s -w' github.com/golangci/golangci-lint/cmd/golangci-lint
+go get -u -v golang.org/x/tools/cmd/godoc
+go get -u -v golang.org/x/tools/cmd/goimports
+go get -u -v golang.org/x/tools/cmd/gorename
+go get -u -v golang.org/x/tools/cmd/guru
+go get -u -v github.com/cweill/gotests/...
+go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct
+go get -u -v github.com/fatih/gomodifytags
+go get -u -v github.com/godoctor/godoctor
+go get -u -v github.com/haya14busa/gopkgs/cmd/gopkgs
+go get -u -v github.com/josharian/impl
+go get -u -v github.com/mdempsky/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u -v github.com/zmb3/gogetdoc
+```
