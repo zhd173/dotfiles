@@ -57,7 +57,7 @@ brew "tree"
 brew "wget"
 brew "zsh"
 brew "zsh-completions"
-brew "d12frosted/emacs-plus/emacs-plus", args: ["HEAD"]
+brew "d12frosted/emacs-plus/emacs-plus"
 brew "derailed/k9s/k9s"
 brew "derailed/popeye/popeye"
 cask "font-source-code-pro"

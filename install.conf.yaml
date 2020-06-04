@@ -1,3 +1,10 @@
+- shell:
+    - xcode-select --install
+    - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+- create:
+    - ~/.config
+
 - defaults:
     link:
       relink: true
@@ -41,12 +48,5 @@
     ~/.spacemacs.d:
       path: ~/Dropbox/config/emacs/spacemacs.d
 
-- create:
-    - ~/.config
-
 - brewfile:
     - Brewfile
-
-- shell:
-    - xcode-select --install
-    - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
