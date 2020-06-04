@@ -1,6 +1,12 @@
 - shell:
-    - xcode-select --install
-    - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    -
+        command: xcode-select --install
+        stdout: true
+        stderr: true
+    -
+        command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        stdout: true
+        stderr: true
 
 - create:
     - ~/.config
