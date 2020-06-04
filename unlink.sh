@@ -30,7 +30,7 @@ mv ~/Dropbox/config/k8s/.k9s ~/.k9s
 mv ~/Dropbox/config/k8s/.kube ~/.kube
 mv ~/Dropbox/config/db/.myclirc ~/.myclirc
 mv ~/Dropbox/config/tmux/.tmux ~/.tmux
-ln -s ~/Dropbox/config/tmux/.tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 mv ~/Dropbox/config/zsh/.zshrc ~/.zshrc
 mv ~/Dropbox/config/zsh/.oh-my-zsh ~/.oh-my-zsh
 mv ~/Dropbox/config/emacs/.emacs.d ~/.emacs.d
