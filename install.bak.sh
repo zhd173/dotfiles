@@ -18,10 +18,6 @@ brew tap d12frosted/emacs-plus
 brew install emacs-plus
 brew link emacs-plus
 
-# Vim 基本配置
-git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_basic_vimrc.sh
-
 # Go
 GO111MODULE=on go get -v golang.org/x/tools/gopls@latest
 GO111MODULE=on CGO_ENABLED=0 go get -v -trimpath -ldflags '-s -w' github.com/golangci/golangci-lint/cmd/golangci-lint
@@ -39,3 +35,5 @@ go get -u -v github.com/mdempsky/gocode
 go get -u -v github.com/rogpeppe/godef
 go get -u -v github.com/zmb3/gogetdoc
 
+# Python
+pip3 install dotbot pipenv
