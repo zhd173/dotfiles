@@ -1,15 +1,15 @@
-- default:
-  link:
-    relink: true
-    create: true
+- defaults:
+    link:
+      relink: true
+      create: true
 
 - clean: ['~','~/.emacs.d']
 
 - link:
     ~/.gitconfig:
-      path: ~/Dropbox/config/git/gitconfig
+      path: ~/Dropbox/config/git/.gitconfig
     ~/.gitmessage.txt:
-      path: ~/Dropbox/config/git/gitmessage.txt
+      path: ~/Dropbox/config/git/.gitmessage.txt
     ~/.config/clash:
       path: ~/Dropbox/config/clash
     ~/.ssh:
@@ -23,17 +23,17 @@
     ~/.pyenv:
       path: ~/Dropbox/config/python/pyenv
     ~/.k9s:
-      path: ~/Dropbox/config/kubernetes/k9s
+      path: ~/Dropbox/config/k8s/k9s
     ~/.kube:
-      path: ~/Dropbox/config/kubernetes/kube
+      path: ~/Dropbox/config/k8s/kube
     ~/.myclirc:
-      path: ~/Dropbox/config/db/myclirc
+      path: ~/Dropbox/config/db/.myclirc
     ~/.tmux:
       path: ~/Dropbox/config/tmux
     ~/.tmux.conf:
       path: ~/Dropbox/config/tmux/.tmux.conf
     ~/.vimrc:
-      path: ~/Dropbox/config/vim/vimrc
+      path: ~/Dropbox/config/vim/.vimrc
     ~/.zshrc:
       path: ~/Dropbox/config/zsh/zshrc
     ~/.oh-my-zsh:
@@ -46,8 +46,9 @@
 - create:
     - ~/.config
 
+- brewfile:
+    - Brewfile
+
 - shell:
     - xcode-select --install
     - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-
