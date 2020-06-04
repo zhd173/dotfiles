@@ -14,6 +14,8 @@ $ git clone https://github.com/zhd173/dotfiles.git ~/.dotfiles
 执行脚本：
 
 ```shell
+$ cd ~/.dotfiles
+
 $ ./install
 ```
     
