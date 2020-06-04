@@ -7,15 +7,21 @@
 
 ## 使用
 
-    * git clone https://github.com/zhd173/dotfiles.git ~/.dotfiles
+```shell
+$ git clone https://github.com/zhd173/dotfiles.git ~/.dotfiles
+```
     
 执行脚本：
 
-    * ./install
+```shell
+$ ./install
+```
     
 执行部分脚本，如 `link` ：
 
-    * ./install --only link
+```shell
+$ ./install --only link
+```
 
 ## 相关说明
 
@@ -23,7 +29,9 @@
 
 Brewfile 可使用以下命令生成：
 
-    * brew bundle dump
+```shell
+$ brew bundle dump
+```
     
 安装的包和依赖清单可查看 [Brewfile](./Brewfile)
 

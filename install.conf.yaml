@@ -40,8 +40,6 @@
       path: ~/Dropbox/config/zsh/oh-my-zsh
     ~/.spacemacs.d:
       path: ~/Dropbox/config/emacs/spacemacs.d
-    ~/.emacs.d/private:
-      path: ~/Dropbox/config/emacs/private
 
 - create:
     - ~/.config
