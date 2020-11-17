@@ -3,9 +3,14 @@
         command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         stdout: true
         stderr: true
+    -
+        command: cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core" && git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+        stdout: true
+        stderr: true
 
 - create:
     - ~/.config
+    - ~/.kube
 
 - defaults:
     link:
