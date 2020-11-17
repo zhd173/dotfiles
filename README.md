@@ -17,6 +17,8 @@ $ git clone https://github.com/zhd173/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 
 $ ./install
+
+$ brew bundle
 ```
     
 执行部分脚本，如 `link` ：
@@ -37,6 +39,3 @@ $ brew bundle dump
     
 安装的包和依赖清单可查看 [Brewfile](./Brewfile)
 
-### 使用的 Dotbot 插件
-
-- [dotbot-brew](https://github.com/d12frosted/dotbot-brew)
