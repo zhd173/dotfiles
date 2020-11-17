@@ -33,8 +33,10 @@
       path: ~/Dropbox/config/python/pyenv
     ~/.k9s:
       path: ~/Dropbox/config/k8s/k9s
-    ~/.kube:
-      path: ~/Dropbox/config/k8s/kube
+    ~/.kube/config:
+      path: ~/Dropbox/config/k8s/config
+    ~/.kube/kubectx:
+      path: ~/Dropbox/config/k8s/kubectx
     ~/.myclirc:
       path: ~/Dropbox/config/db/.myclirc
     ~/.tmux:
